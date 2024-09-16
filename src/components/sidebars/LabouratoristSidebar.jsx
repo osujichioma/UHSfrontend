@@ -43,20 +43,20 @@ function LabouratoristSidebar({ children }) {
     },
     // { name: "Add Diagnosis", link: "/admin/departments", icon: IoIosPeople },
     {
-      name: "Blood Donor",
+      name: "Lab results",
       link: "/lab_technician/blood_donor",
       icon: BiDonateBlood,
     },
     {
-      name: "Dispatch Blood",
+      name: "Lab Order",
       link: "/lab_technician/dispatch_blood",
       icon: MdOutlineBloodtype,
     },
-    {
-      name: "Blood Bank",
-      link: "/lab_technician/blood_bank",
-      icon: AiOutlineBank,
-    },
+    // {
+    //   name: "Blood Bank",
+    //   link: "/lab_technician/blood_bank",
+    //   icon: AiOutlineBank,
+    // },
     {
       name: "Profile",
       link: "/lab_technician/profile",

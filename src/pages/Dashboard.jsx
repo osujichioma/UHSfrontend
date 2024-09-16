@@ -117,12 +117,12 @@ function Dashboard() {
       {admin && (
         <AdminSidebar>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 m-2">
-            <Card
+            {/* <Card
               cardname="Patients"
               number={patients?.length}
               pic={`${pictwo}`}
               linkTo={"/admin/patients"}
-            />
+            /> */}
             <Card
               cardname="Doctor"
               number={doctors?.length}
@@ -159,14 +159,14 @@ function Dashboard() {
               pic={`${accountantpic}`}
               linkTo={"/admin/accountants"}
             />
-            <Card
+            {/* <Card
               cardname="Bed"
               number={bedallotments?.length}
               pic={`${bedpic}`}
               linkTo={"/admin/bed_allotment"}
-            />
+            /> */}
             <Card
-              cardname="Blood Bank"
+              cardname="Diagnosis"
               number="#"
               pic={`${reportpic}`}
               linkTo={"/admin/blood_bank"}
@@ -222,48 +222,48 @@ function Dashboard() {
               pic={`${appointmentpic}`}
               linkTo={"/doctor/appointments"}
             />
-            <Card
+            {/* <Card
               cardname="Bed"
               number={bedallotments?.length}
               pic={`${bedpic}`}
               linkTo={"/doctor/bed_allotment"}
-            />
+            /> */}
             <Card
-              cardname="Blood Donor"
+              cardname="Test Results"
               number={blooddonnors?.length}
               pic={`${reportpic}`}
               linkTo={"/doctor/blood_donor"}
             />
             <Card
-              cardname="Dispatch Blood"
+              cardname="Test Order"
               number={dispatchblood?.length}
               pic={`${laboratoristpic}`}
               linkTo={"/doctor/dispatch_blood"}
             />
             <Card
-              cardname="Blood Bank"
+              cardname="Diagnosis"
               number="#"
               pic={`${diagnosis}`}
               linkTo={"/doctor/blood_bank"}
             />
-            <Card
+            {/* <Card
               cardname="Operation"
               number={operations?.length}
               pic={`${tretment}`}
               linkTo={"/doctor/operation"}
-            />
-            <Card
+            /> */}
+            {/* <Card
               cardname="Birth Report"
               number={births?.length}
               pic={`${reportpic}`}
               linkTo={"/doctor/birth"}
-            />
-            <Card
+            /> */}
+            {/* <Card
               cardname="Death Report"
               number={deaths?.length}
               pic={`${reportpic}`}
               linkTo={"/doctor/death"}
-            />
+            /> */}
             <Card
               cardname="Profile"
               number="@"
@@ -296,42 +296,42 @@ function Dashboard() {
               pic={`${bedpic}`}
               linkTo={"/nurse/bed_allotment"}
             />
-            <Card
-              cardname="Blood Donor"
+            {/* <Card
+              cardname="Test Results"
               number={blooddonnors?.length}
               pic={`${reportpic}`}
               linkTo={"/nurse/blood_donor"}
-            />
-            <Card
-              cardname="Dispatch Blood"
+            /> */}
+            {/* <Card
+              cardname="Test Order"
               number={dispatchblood?.length}
               pic={`${laboratoristpic}`}
               linkTo={"/nurse/dispatch_blood"}
-            />
-            <Card
-              cardname="Blood Bank"
+            /> */}
+            {/* <Card
+              cardname="Diagnosis"
               number="#"
               pic={`${diagnosis}`}
               linkTo={"/nurse/blood_bank"}
-            />
-            <Card
+            /> */}
+            {/* <Card
               cardname="Operation"
               number={operations?.length}
               pic={`${tretment}`}
               linkTo={"/nurse/operation"}
-            />
-            <Card
+            /> */}
+            {/* <Card
               cardname="Birth Report"
               number={births?.length}
               pic={`${reportpic}`}
               linkTo={"/nurse/birth"}
-            />
-            <Card
+            /> */}
+            {/* <Card
               cardname="Death Report"
               number={deaths?.length}
               pic={`${reportpic}`}
               linkTo={"/nurse/death"}
-            />
+            /> */}
             <Card
               cardname="Profile"
               number="@"
@@ -380,24 +380,24 @@ function Dashboard() {
               linkTo={"/admin/doctors"}
             /> */}
             <Card
-              cardname="Blood Donor"
+              cardname="Lab Results"
               number={blooddonnors?.length}
               pic={`${reportpic}`}
               linkTo={"/lab_technician/blood_donor"}
             />
 
             <Card
-              cardname="Dispatch Blood"
+              cardname="Lab Order"
               number={dispatchblood?.length}
               pic={`${laboratoristpic}`}
               linkTo={"/lab_technician/dispatch_blood"}
             />
-            <Card
-              cardname="Blood Bank"
+            {/* <Card
+              cardname="Diagnosis"
               number="#"
               pic={`${diagnosis}`}
               linkTo={"/lab_technician/blood_bank"}
-            />
+            /> */}
 
             <Card
               cardname="Profile"
