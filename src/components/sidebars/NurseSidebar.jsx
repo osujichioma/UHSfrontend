@@ -50,7 +50,7 @@ function NurseSidebar({ children }) {
     },
     { name: "Vital Signs", link: "/nurse/vitalSigns", icon: GiHospitalCross },
     { name: "Patients", link: "/nurse/patients", icon: IoIosPeople },
-    { name: "Bed Allotment", link: "/nurse/bed_allotment", icon: FaBed },
+    { name: "Room Allotment", link: "/nurse/bed_allotment", icon: FaBed },
     { name: "Add Bed", link: "/nurse/add_bed", icon: BiBed },
     // { name: "Blood Bank", link: "/nurse/blood_bank", icon: AiOutlineBank },
     // { name: "Blood Donor", link: "/nurse/blood_donor", icon: BiDonateBlood },

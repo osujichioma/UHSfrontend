@@ -46,7 +46,7 @@ function BedAllotment() {
     <AdminSidebar>
       <div className="bg-gray-100 p-8">
         <h1 className="font-bold mb-4 text-indigo-900 text-lg lg:text-xl">
-          BED ALLOTMENT REPORT
+          ROOM ALLOTMENT REPORT
         </h1>
         <div className="flex justify-between items-center">
           <SearchInput onSearch={search} />

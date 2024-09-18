@@ -67,7 +67,7 @@ function EditBedAllotment({ url }) {
   };
 
   return (
-    <FormLayout formName="EDIT BED ALLOTMENT">
+    <FormLayout formName="EDIT ROOM ALLOTMENT">
       <form onSubmit={handleSubmit}>
         <Select
           label="Patient"
@@ -138,7 +138,7 @@ function EditBedAllotment({ url }) {
           onChange={handleChange}
         />
         <input type="hidden" name="staffname" onChange={handleChange} />
-        <Button>{loading ? <ButtonPreloader /> : "Edit Bed Allotment"}</Button>
+        <Button>{loading ? <ButtonPreloader /> : "Edit Room Allotment"}</Button>
       </form>
     </FormLayout>
   );

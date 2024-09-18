@@ -110,8 +110,8 @@ function DispatchBlood({ role }) {
 
   return (
     <Tabs
-      label1="Dispatched Blood"
-      label2="Add Dispatched Blood"
+      label1="Test Order"
+      label2="Add Test Order"
       content1={
         <div>
           <div className="flex justify-between items-center">
@@ -173,7 +173,7 @@ function DispatchBlood({ role }) {
         </div>
       }
       content2={
-        <FormLayout formName="ADD DISPATCHED BLOOD">
+        <FormLayout formName="ADD TEST ORDER">
           <form onSubmit={handleSubmit}>
             <Select
               label="Patient"
@@ -225,9 +225,7 @@ function DispatchBlood({ role }) {
               onChange={handleChange}
             />
             <input type="hidden" name="staffname" onChange={handleChange} />
-            <Button>
-              {loading ? <ButtonPreloader /> : "Add Dispatched Blood"}
-            </Button>
+            <Button>{loading ? <ButtonPreloader /> : "Add"}</Button>
           </form>
         </FormLayout>
       }

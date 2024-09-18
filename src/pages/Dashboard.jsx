@@ -291,7 +291,7 @@ function Dashboard() {
               linkTo={"/nurse/patients"}
             />
             <Card
-              cardname="Bed Allotment"
+              cardname="Room Allotment"
               number={bedallotments?.length}
               pic={`${bedpic}`}
               linkTo={"/nurse/bed_allotment"}

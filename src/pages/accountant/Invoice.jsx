@@ -5,6 +5,7 @@ import axios from "../../services/axios";
 import { Button, Input, Select } from "../../components";
 import { toast } from "react-toastify";
 import ButtonPreloader from "../../components/ButtonPreloader";
+import uilogo from "../../assets/uilogo.png";
 
 function Invoice() {
   const navigate = useNavigate();
@@ -59,12 +60,10 @@ function Invoice() {
           <div className="grid lg:grid-cols-2">
             <h1 className="text-3xl font-bold text-indigo-900">INVOICE</h1>
             <div>
-              <h1 className="text-base font-bold">+ St. Andrew's Hospital</h1>
-              <h2 className="text-sm">
-                No. 9 Airport Road opp. Jakpa Junction
-              </h2>
-              <h3 className="text-sm">standrewhospital@gmail.com</h3>
-              <h3 className="text-sm">09139124809</h3>
+              <img src={uilogo} className="w-44" />
+              <h1 className="text-lg font-bold text-indigo-700 pb-4">
+                + University Health Services
+              </h1>
             </div>
             <div className=" py-12">
               <p className="text-sm">Invoiced to:</p>
@@ -74,7 +73,8 @@ function Invoice() {
                 <span className="font-bold">
                   &#8358;
                   {formData?.drugamount}
-                </span>
+                </span>{" "}
+                (Free)
               </p>
               <p className="font-bold text-base">
                 Issued: {formData?.paymentdate}
@@ -102,6 +102,7 @@ function Invoice() {
               <option value={formData?.modeofpayment}>
                 {formData?.modeofpayment}
               </option>
+              <option value="Free">Free</option>
               <option value="Cash">Cash</option>
               <option value="Bank Transfer">Bank Transfer</option>
             </Select>

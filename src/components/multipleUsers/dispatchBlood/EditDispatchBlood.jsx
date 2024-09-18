@@ -59,7 +59,7 @@ function EditDispatchBlood({ url }) {
   };
 
   return (
-    <FormLayout formName="EDIT DISPATCHED BLOOD">
+    <FormLayout formName="EDIT TEST ORDER">
       <form onSubmit={handleSubmit}>
         <Select
           label="Patient"
@@ -114,9 +114,7 @@ function EditDispatchBlood({ url }) {
           onChange={handleChange}
         />
         <input type="hidden" name="staffname" onChange={handleChange} />
-        <Button>
-          {loading ? <ButtonPreloader /> : "Edit Dispatched Blood"}
-        </Button>
+        <Button>{loading ? <ButtonPreloader /> : "Edit"}</Button>
       </form>
     </FormLayout>
   );

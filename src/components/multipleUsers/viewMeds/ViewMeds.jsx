@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import image from "../../../assets/undraw_medical_care_movn.png";
 import { useLocation } from "react-router-dom";
 import axios from "../../../services/axios";
+import uilogo from "../../../assets/uilogo.png";
 
 function ViewMeds() {
   const [formData, setFormData] = useState([]);
@@ -26,21 +27,21 @@ function ViewMeds() {
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-between">
             <div>
+              <img src={uilogo} className="w-44" />
               <h1 className="text-3xl font-bold text-indigo-700 pb-4">
-                + St. Andrew's Hospital
+                + University Health Services
               </h1>
-              <p className="text-base font-semibold">
-                No. 9 Airport Road opp. Jakpa Junction
-              </p>
-              <p className="text-base font-semibold">
-                Mail: standrewhospital@gmail.com
-              </p>
-              <p className="text-base font-semibold">Tel: 09139124809</p>
             </div>
             <div className="font-semibold">
               <p className="text-base">Patient: {currentPatient}</p>
               <p className="text-base">Doctor: {currentDoctor}</p>
               <div className="text-base">
+                Payment Status:{" "}
+                <p className=" rounded inline text-sm bg-lime-500 text-center px-8 py-1 text-white">
+                  FREE
+                </p>
+              </div>
+              {/* <div className="text-base">
                 Payment Status:{" "}
                 {formData?.paymentstatus === "Paid" ? (
                   <p className="font-bold rounded px-2 inline text-base bg-green-700 text-center w-16 text-white">
@@ -51,7 +52,7 @@ function ViewMeds() {
                     Unpaid
                   </p>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex justify-center w-full">

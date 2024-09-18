@@ -113,8 +113,8 @@ function BloodDonor({ role }) {
 
   return (
     <Tabs
-      label1="Blood Donors"
-      label2="Add Blood Donor"
+      label1="Test Results"
+      label2="Add"
       content1={
         <div>
           <div className="flex justify-between items-center">
@@ -173,7 +173,7 @@ function BloodDonor({ role }) {
         </div>
       }
       content2={
-        <FormLayout formName="ADD BLOOD DONOR">
+        <FormLayout formName="ADD">
           <form onSubmit={handleSubmit}>
             <Input
               label="Name"
@@ -238,7 +238,7 @@ function BloodDonor({ role }) {
               name="lastdonationdate"
               onChange={handleChange}
             />
-            <Button>{loading ? <ButtonPreloader /> : "Add Blood Donor"}</Button>
+            <Button>{loading ? <ButtonPreloader /> : "Add"}</Button>
           </form>
         </FormLayout>
       }

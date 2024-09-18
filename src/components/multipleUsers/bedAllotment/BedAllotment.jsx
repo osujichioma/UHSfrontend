@@ -116,8 +116,8 @@ function BedAllotment({ role }) {
 
   return (
     <Tabs
-      label1="Bed Allotment"
-      label2="Add Bed Allotment"
+      label1="Room Allotment"
+      label2="Add Room Allotment"
       content1={
         <div>
           <div className="flex justify-between items-center">
@@ -180,7 +180,7 @@ function BedAllotment({ role }) {
         </div>
       }
       content2={
-        <FormLayout formName="BED ALLOTMENT">
+        <FormLayout formName="ROOM ALLOTMENT">
           <form onSubmit={handleSubmit}>
             <Select
               label="Patient"
@@ -247,7 +247,7 @@ function BedAllotment({ role }) {
             />
             <input type="hidden" name="staffname" onChange={handleChange} />
             <Button>
-              {loading ? <ButtonPreloader /> : "Add Bed Allotment"}
+              {loading ? <ButtonPreloader /> : "Add Room Allotment"}
             </Button>
           </form>
         </FormLayout>

@@ -80,7 +80,7 @@ function ProvideMeds() {
                 <Td>{i + 1 * (currentPage * postsPerPage - 9)}</Td>
                 <Td>{prescription?.patients[0]?.name}</Td>
                 <Td>{prescription?.date}</Td>
-                <Td>&#8358;{prescription?.drugamount}</Td>
+                <Td>&#8358;{prescription?.drugamount} (Free)</Td>
                 <Td>{prescription?.doctor[0]?.name}</Td>
                 <OptionsTd>
                   <ViewButton

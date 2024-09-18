@@ -85,6 +85,11 @@ function Payments() {
                 </span>
               </Td>
               <Td>
+                <p className="font-bold text-sm bg-lime-500 text-center py-2 px-8 rounded text-white">
+                  FREE
+                </p>
+              </Td>
+              {/* <Td>
                 {prescription.paymentstatus === "Paid" ? (
                   <p className="font-bold text-base bg-green-700 text-center px-2 rounded w-24 text-white">
                     {prescription?.paymentstatus}
@@ -94,7 +99,7 @@ function Payments() {
                     Unpaid
                   </p>
                 )}
-              </Td>
+              </Td> */}
               {user?.role !== "admin" && (
                 <OptionsTd>
                   <ViewButton

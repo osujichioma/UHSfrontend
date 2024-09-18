@@ -81,6 +81,7 @@ function NewInvoice() {
             onChange={handleChange}
           >
             <option value="">Select Mode of Payment</option>
+            <option value="Free">Free</option>
             <option value="Cash">Cash</option>
             <option value="Bank Transfer">Bank Transfer</option>
           </Select>

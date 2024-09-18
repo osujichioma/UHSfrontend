@@ -114,6 +114,7 @@ function EditPayment() {
             <option value={formData?.modeofpayment}>
               {formData?.modeofpayment}
             </option>
+            <option value="Free">Free</option>
             <option value="Cash">Cash</option>
             <option value="Bank Transfer">Bank Transfer</option>
           </Select>
