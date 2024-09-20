@@ -62,7 +62,7 @@ function EditBloodDonor({ url }) {
   };
 
   return (
-    <FormLayout formName="EDIT BLOOD DONOR">
+    <FormLayout formName="EDIT LAB RESULT">
       <form onSubmit={handleSubmit}>
         <Input
           label="Name"
@@ -139,7 +139,7 @@ function EditBloodDonor({ url }) {
           value={formData?.lastdonationdate}
           onChange={handleChange}
         />
-        <Button>{loading ? <ButtonPreloader /> : "Edit Blood Donor"}</Button>
+        <Button>{loading ? <ButtonPreloader /> : "Edit Lab Result"}</Button>
       </form>
     </FormLayout>
   );

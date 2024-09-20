@@ -135,8 +135,8 @@ function BloodDonor({ role }) {
               <Th>Gender</Th>
               <Th>Age</Th>
               <Th>Blood Group</Th>
-              <Th>No. Of Bags</Th>
-              <Th>Last Donation Date</Th>
+              <Th>Test details</Th>
+              <Th>Lab test order</Th>
               <OptionsTh>Options</OptionsTh>
             </Thead>
             {currentPosts.map((blooddonor, i) => {
@@ -227,13 +227,13 @@ function BloodDonor({ role }) {
               <option value="AB-">AB-</option>
             </Select>
             <Input
-              label="No. Of Bags"
+              label="Test details"
               type="text"
               name="bags"
               onChange={handleChange}
             />
             <Input
-              label="Last Donation Date"
+              label="Last test order"
               type="date"
               name="lastdonationdate"
               onChange={handleChange}
