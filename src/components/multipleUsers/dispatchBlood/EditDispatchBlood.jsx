@@ -93,8 +93,8 @@ function EditDispatchBlood({ url }) {
           <option value="AB-">AB-</option>
         </Select>
         <Input
-          label="No. Of Bags"
-          type="number"
+          label="Test details"
+          type="text"
           name="bags"
           value={formData?.bags}
           onChange={handleChange}

@@ -136,7 +136,7 @@ function BloodDonor({ role }) {
               <Th>Age</Th>
               <Th>Blood Group</Th>
               <Th>Test details</Th>
-              <Th>Lab test order</Th>
+              <Th>Last test order</Th>
               <OptionsTh>Options</OptionsTh>
             </Thead>
             {currentPosts.map((blooddonor, i) => {

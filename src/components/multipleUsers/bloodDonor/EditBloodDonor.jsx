@@ -126,14 +126,14 @@ function EditBloodDonor({ url }) {
           <option value="AB-">AB-</option>
         </Select>
         <Input
-          label="No. Of Bags"
+          label="Test details"
           type="text"
           name="bags"
           value={formData?.bags}
           onChange={handleChange}
         />
         <Input
-          label="Last Donation Date"
+          label="Last test order"
           type="date"
           name="lastdonationdate"
           value={formData?.lastdonationdate}

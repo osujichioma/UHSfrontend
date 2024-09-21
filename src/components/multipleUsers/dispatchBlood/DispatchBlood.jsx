@@ -130,7 +130,7 @@ function DispatchBlood({ role }) {
               <Th>Reg. Id</Th>
               <Th>Patient</Th>
               <Th>Blood Group</Th>
-              <Th>No. Of Bags</Th>
+              <Th>Test details</Th>
               <Th>Charges</Th>
               <Th>Date</Th>
               <OptionsTh>Options</OptionsTh>
@@ -147,7 +147,7 @@ function DispatchBlood({ role }) {
                   <Td>{dispatch?.bags}</Td>
                   <Td>
                     <span>&#8358;</span>
-                    {dispatch?.charges}
+                    {dispatch?.charges} (Free)
                   </Td>
                   <Td>{dispatch?.date}</Td>
                   <OptionsTd>
@@ -207,8 +207,8 @@ function DispatchBlood({ role }) {
               <option value="AB-">AB-</option>
             </Select>
             <Input
-              label="No. Of Bags"
-              type="number"
+              label="Test details"
+              type="text"
               name="bags"
               onChange={handleChange}
             />
