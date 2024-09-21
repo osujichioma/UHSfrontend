@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import axios from "../services/axios";
 import AdminSidebar from "../components/sidebars/AdminSidebar";
-import pictwo from "../assets/Patient.png";
+import pictwo from "../assets/patient.png";
 import doctorpic from "../assets/doctor.png";
 import nursepic from "../assets/nurse.png";
 import supportpic from "../assets/support-staft.png";
